@@ -110,6 +110,7 @@ body{
     select the header only, by tag name
 */
 /* ----- */
+header
 {
     margin: 0 auto 2rem auto;
 }
@@ -173,7 +174,8 @@ body{
     select all of the unordered lists on the page using the tag name selector
 */
 /* ----- */
-{
+
+ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
@@ -188,7 +190,7 @@ body{
     select all of the links on the page using the tag name selector
 */
 /* ----- */
-{
+a{
     color: var(--blue);
 }
 
@@ -198,17 +200,17 @@ body{
     select the links on the page when a user hovers over them using the tag name and pseudo-class  selector
 */
 /* ----- */
-{
+a:hover{
     text-decoration: none;
 }
 
 /* ----- */
 /* 
-    TO DO:
+
     select the links on the page when they have keyboard focus using the tag name and pseudo-class  selector
 */
 /* ----- */
-{
+a:focus{
     text-decoration: none;
     outline: 4px solid var(--dv-med-blue);
     outline-offset: 2px;
@@ -223,7 +225,7 @@ body{
     select the main element by tag name
 */
 /* ----- */
-{
+main{
     width: 100%;
     max-width: 1200px;
     margin: 2rem auto;
@@ -241,7 +243,7 @@ body{
     select the sections on the page that are direct descendants to the main by tag names and using the direct descendant selector
 */
 /* ----- */
-{
+main > section{
     display: block;
     width: calc(100% - 2rem);
     max-width: calc(500px - 2rem);
@@ -261,7 +263,7 @@ TO DO:
 select the paragraph elements by tag name
 */
 /* ----- */
-{
+p{
     padding: 1rem; 
     font-size: 1.2rem;
     max-width: 65ch;
@@ -277,7 +279,7 @@ select the paragraph elements by tag name
     select the images and SVGs by tag names
 */
 /* ----- */
-{
+img, svg{
     display: block;
     width: 100%;
     height: auto;
@@ -292,7 +294,7 @@ TO DO:
 select all of the spans by tag name
 */
 /* ----- */
-{
+span{
     display: block;
 }
 
@@ -308,7 +310,7 @@ select all of the spans by tag name
     select the h2 in the first section using the ID, tag name, and child/descendant selectors
 */
 /* ----- */
-{
+#image h2{
     padding: 12px 0;
     background-color: var(--blue);
     color: var(--white);
